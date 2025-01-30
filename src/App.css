@@ -1,38 +1,98 @@
-.App {
-  text-align: center;
+h1{ margin-left: 10px;
+    font-size: 1.5rem;
+    padding-left: 25px;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1:hover{
+    font-size: 1.51rem;
+    color: rgb(17, 94, 71);
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h2{font-size: 0.9rem;}
+a{color:rgb(255, 255, 255);
+  text-decoration: none;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+body{
+    background-color: rgb(173, 173, 173);
 }
-
-.App-link {
-  color: #61dafb;
+p{font-size: 0.7rem;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+input{
+    border-radius: 5px;
+    padding: 10px;
+    border: 1px solid grey ;
+    height: 25%;
+    width: 50%;
+    max-width: 300px;
+    margin-right: 50px;
+}
+input:hover{
+    scale: 1.05;
+}
+.head-felx{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     padding-top: 15px;
+     
+}
+.header{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(149, 152, 155);
+    width: 96%;
+    border-radius: 10px;
+    }
+.article{
+    line-height: 0.9rem;
+    background-color: rgb(255, 254, 254);
+    width: 20%;
+    margin: 5px 15px 5px 15px; 
+    padding: 10px 15px;   
+    row-gap: 0px;
+    border-radius: 3%;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+}
+.article:hover{
+    transform: scale(1.05);
+}
+.imageee{height: 100%;
+width: 100%;
+border-radius: 5%;}
+.imag{
+    height: 200px;
+    
+}
+.news{
+    width: 100%;    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: rgb(173, 173, 173);
+    padding: 20px;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.ap{
+    display: flex;
+    justify-content: space-between;
+}
+@media (max-width:768px) {
+.article{
+    width: calc(33%-50px);
+}
+input{width: 70%;
+    margin-right: 5px;
+}
+}
+@media (max-width:480px){
+.article{width: 100%;}
+.input{
+    margin-right: 5px;
+    width: 100%;
+}
+h1{
+    font-size: 1rem;
+}
 }
